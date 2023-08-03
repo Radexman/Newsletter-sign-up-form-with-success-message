@@ -3,20 +3,34 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta
-			name="description"
-			content="This project boilerplate was created for instant jump into development without need to worry about setting everything up from scratch, it is framework agnostic."
-		/>
+		<meta name="description" content="A Frontend mentor challange project" />
 		<link rel="stylesheet" href="./css/main.css" />
-		<link rel="shortcut icon" href="./assets/tailwind-logo.png" type="image/x-icon" />
+		<link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon" />
 		<script src="./js/index.js" defer></script>
-		<title>Modern JavaScript Web Dev Environment</title>
+		<title>Newsletter sign up form with success message</title>
 	</head>
 	<body>
-		<div class="flex min-h-screen flex-col items-center justify-center bg-slate-900">
-			<h1 class="text-center text-4xl text-white">Modern JavaScript Web Dev Environment</h1>
-			<div class="flex items-center justify-center text-center">
-				<img src="./assets/modern-web-dev-logo.png" alt="" />
+		<!-- Wrapper Container -->
+		<div class="flex min-h-screen bg-darkSlateGray md:items-center md:justify-center">
+			<!-- Main Card Component -->
+			<div class="mb-5 w-full rounded-xl bg-white pb-4 md:max-w-3xl md:p-4">
+				<!-- Inner Flex Container -->
+				<div class="flex flex-col-reverse md:flex-row">
+					<!-- Content Box -->
+					<div class="md:w-1/2">
+						Lorem ipsum dolor sit amet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam quo magni eius quia corrupti
+						itaque culpa iure expedita maxime praesentium maiores, cum nobis dolorum vitae neque velit est quam pariatur ullam id? Commodi
+						possimus incidunt cumque libero iste deleniti, suscipit nobis doloremque, et, numquam provident inventore quidem repellat
+						eaque nesciunt.
+					</div>
+					<!-- Image Box -->
+					<div class="md:w-1/2">
+						<!-- Mobile Image -->
+						<img class="w-full md:hidden" src="./assets/illustration-sign-up-mobile.svg" alt="Charts and screens" />
+						<!-- Desktop Image -->
+						<img class="hidden md:block" src="./assets/illustration-sign-up-desktop.svg" alt="Charts and screens" />
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>
