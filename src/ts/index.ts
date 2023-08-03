@@ -9,7 +9,6 @@ const dismissBtn = document.getElementById('dismiss-btn')!;
 const regex = new RegExp('[a-z0-9]+@[a-z]+.[a-z]{2,3}');
 
 // Form validation
-
 const validateForm = (e: Event): void => {
 	e.preventDefault();
 	const inputValue = input.value;
@@ -30,14 +29,14 @@ const validateForm = (e: Event): void => {
 	input.value = '';
 };
 
-const customMsg = (email: string) => {
+const customMsg = (email: string): void => {
 	// Create custom message
 	customMsgEl.innerHTML = `
 	A confirmation email has been sent to ${email.bold()}.
 	Please open it and click the button inside to confirm your subscription.`;
 };
 
-const cardSwap = () => {
+const cardSwap = (): void => {
 	// Swap cards
 	mainCard.classList.toggle('hidden');
 	sucessMessageCard.classList.toggle('hidden');
